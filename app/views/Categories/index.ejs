@@ -1,0 +1,33 @@
+<%- include('../partials/head')  %>
+<%- include('../partials/menu')  %>
+
+<div class="active section">Categories</div>
+<div class="ui container">
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Created</th>
+            <th>Updated</th>
+            <th class="right aligned">
+                <a href="<%= self.url('categories/add') %>" class="ui teal labeled icon button">
+                    <i class="add icon"></i> <span>Add new</span>
+                </a>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+          <% rows.forEach(item => { %>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          <% }) %>
+        </tbody>
+     </table>
+ </div>    
+
+<%- include('../Partials/endbody') -%>
+<%- include('../Partials/endhtml') -%>
